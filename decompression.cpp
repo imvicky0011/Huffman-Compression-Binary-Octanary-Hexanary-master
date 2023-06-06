@@ -4,8 +4,7 @@
 #define quick ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
 using namespace std;
 
-void set_file_name(string original, string &name)
-{
+void set_file_name(string original, string &name) {
     int n = original.size();
     for(int i=0; i<n; i++)
     {
@@ -15,8 +14,7 @@ void set_file_name(string original, string &name)
     }
 }
 
-string dec_to_bin(unsigned char n)
-{
+string dec_to_bin(unsigned char n) {
     string ans = "";
     while(n>0)
     {
@@ -33,8 +31,7 @@ string dec_to_bin(unsigned char n)
     return ans;
 }
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     quick;
 
     // opening the input file using command line argument
@@ -50,7 +47,7 @@ int main(int argc, char *argv[])
         // setting the input file name
         set_file_name(argv[1], input_file_name);
         // this will be the name of the decompressed file
-        string output_argument = input_file_name + "-reyaan_decompressed_it.";
+        string output_argument = input_file_name + "-vicky_decompressed_it.";
 
         // finding the file type
         int input_file_name_sz = 0;

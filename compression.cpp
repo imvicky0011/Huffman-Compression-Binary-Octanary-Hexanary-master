@@ -8,15 +8,13 @@ using namespace std;
 const int tree = 2;
 int log_sz_of_tree = 0;
 
-void pre()
-{
+void pre() {
     int temp = tree;
     while(temp>>=1)
         ++log_sz_of_tree;
 }
 
-void set_file_name_type(string original, string &name, string &type)
-{
+void set_file_name_type(string original, string &name, string &type) {
     bool check = 1;
     int n = original.size();
     for(int i=0; i<n; i++)
@@ -126,7 +124,7 @@ int main(int argc, char *argv[])
         // setting the input file name and type separately
         set_file_name_type(argv[1], input_file_name, input_file_type);
         // this will be the name of the compressed file
-        string output_argument = input_file_name + "-reyaan_compressed_it.bin";
+        string output_argument = input_file_name + "-vicky_compressed_it.bin";
 
         FILE *output_file = fopen(output_argument.c_str(), "wb");
         if(output_file == NULL)
